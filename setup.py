@@ -7,13 +7,16 @@ except ImportError:
 
 setup(
     name = "rjgtoys-thing",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Robert J. Gautier",
     author_email = "bob.gautier@gmail.com",
     url = "https://github.com/bobgautier/rjgtoys-Thing",
     description = ("A Python dict that behaves a bit like a JavaScript object"),
     namespace_packages=['rjgtoys'],
     packages = ['rjgtoys','rjgtoys.thing'],
+    requires = [
+        'rjgtoys-xc'
+    ],
     install_requires = [
     ],
     extras_require = {
